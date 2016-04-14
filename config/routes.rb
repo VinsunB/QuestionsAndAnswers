@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   
-root 'users#new'
+  
 
+root 'questions#index'
+
+resources :questions
   resources :users
   resources :sessions
   # The priority is based upon order of creation: first created -> highest priority.
