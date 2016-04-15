@@ -29,6 +29,11 @@ gem 'spring',        group: :development
 # Use ActiveModel has_secure_password
  gem 'bcrypt', '~> 3.1.7'
 
+group :test do
+	gem 'minitest-reporters', '~> 1.1', '>= 1.1.8'
+end
+
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
