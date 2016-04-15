@@ -1,2 +1,13 @@
-<h1>Questions#index</h1>
-<p>Find me in app/views/questions/index.html.erb</p>
+<% @questions.each do |question| %>
+
+<div class="question_index_box">
+
+<%= question.title %>
+
+</div>
+
+
+<% end %>
+<br>
+<br>
+<%= link_to "Ask a Question", new_question_path %>
