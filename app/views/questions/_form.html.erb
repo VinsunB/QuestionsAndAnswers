@@ -1,0 +1,22 @@
+<%= form_for @question do |f| %>
+
+<div class="form_wrapper">
+
+<div class="form_input_wrapper"> 
+<%= f.label :title %>
+<%= f.text_field :title %>
+</div>
+
+<br>
+
+<div class="form_input_wrapper"> 
+<%= f.label :question %>
+<br>
+<%= f.text_area :body %>
+</div>
+
+</div>
+
+<%= f.submit %>
+
+<% end %>
