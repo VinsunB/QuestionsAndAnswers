@@ -1,8 +1,12 @@
+<h2>Questions</h2>
+<div class="left_sidebar">
 <% @questions.each do |question| %>
 
-<div class="question_index_box">
+<div class='content_box'>
+<%= link_to question.title, question_path(question) %>
 
-<%= question.title %>
+<span><%= truncate question.body %></span>
+
 
 </div>
 
@@ -10,4 +14,9 @@
 <% end %>
 <br>
 <br>
-<%= link_to "Ask a Question", new_question_path %>
+<div class="button_one"><%= link_to "Ask a Question", new_question_path %></div>
+</div>
+
+<div id="right_sidebar"> </div>
+<br>
+<br>

@@ -1,8 +1,10 @@
 class QuestionsController < ApplicationController
  before_action :find_question, only: [:show, :edit, :update]
+before_filter :current_user_presence, except: [:index, :show]
+
 
   def index
-  @questions = Question.limit(10)
+  @questions = Question.limit(20).order("created_at DESC")
   end
 
   def show
@@ -34,6 +36,14 @@ end
 end
 
 private
+
+def current_user_presence
+if current_user == nil
+flash[:notice] = "You need to be logged in to do that"
+  redirect_to root_path
+end
+end
+
 
 def find_question
 @question = Question.find(params[:id])

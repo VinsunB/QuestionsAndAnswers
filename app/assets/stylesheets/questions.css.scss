@@ -1,3 +1,83 @@
 // Place all the styles related to the questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h2 {
+	margin-left: 30px;
+margin-bottom: 5px;
+}
+
+a {
+	text-decoration: none;
+}
+
+#right_sidebar {
+	float: right;
+	margin-right: 30px;
+
+background-color: #fff;
+
+border: 1px solid black;
+border-radius: 5px;
+height: 500px;
+width: 400px;
+ box-shadow: 10px 10px 5px grey;
+
+}
+
+
+/*  index question box  ##################   */
+
+.content_box {
+border: 1px solid grey;
+padding: 5px;
+ transition: padding .4s;
+}
+
+.content_box:hover{
+ border-radius: 2px;
+ box-shadow: 10px 10px 5px grey;
+
+padding: 7px;
+}
+
+.content_box:hover a {
+ height: 50px;
+}
+
+.content_box a {
+height: 50px;
+	display: block;
+	color: #66CC99;
+font-family: serif;
+font-size: 150%;
+}
+
+.content_box a:hover{
+	text-decoration: none;
+	color: #669999;
+}
+
+
+
+/*  ####### left sidebar #########   */
+
+.left_sidebar {
+float: left;
+margin-left: 30px;
+margin-top: 0px;
+
+background-color: #fff;
+
+border: 1px solid black;
+border-radius: 5px;
+
+width: 500px;
+ box-shadow: 10px 10px 5px grey;
+}
+
+
+
+
+
+
