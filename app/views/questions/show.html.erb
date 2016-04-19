@@ -4,3 +4,7 @@
 <%= @question.body %>
 </p>
 <%= link_to "Back", questions_path %>
+
+<% if question_belongs_to_user?(@question)%>
+<%= link_to "Update", edit_question_path(@question) %>
+<% end %>
