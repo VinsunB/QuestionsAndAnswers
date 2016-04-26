@@ -2,6 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+/* 
+1. index question box
+2. left sidebar ## index page
+3. show page
+
+
+ */
+
+
+h3 {
+	text-align: center;
+}
+
+
 h2 {
 	margin-left: 30px;
 margin-bottom: 5px;
@@ -26,7 +41,7 @@ width: 400px;
 }
 
 
-/*  index question box  ##################   */
+/* 1 index question box  ##################   */
 
 .content_box {
 border: 1px solid grey;
@@ -36,7 +51,7 @@ padding: 5px;
 
 .content_box:hover{
  border-radius: 2px;
- box-shadow: 10px 10px 5px grey;
+ box-shadow: -2px 5px 5px grey;
 
 padding: 7px;
 }
@@ -60,7 +75,7 @@ font-size: 150%;
 
 
 
-/*  ####### left sidebar #########   */
+/* 2 ####### left sidebar #########   */
 
 .left_sidebar {
 float: left;
@@ -77,7 +92,12 @@ width: 500px;
 }
 
 
+/* 3 ####### show page #########   */
+
+.container {
+	padding-left: 5px;
+}
 
 
-
+/* #############################   */
 

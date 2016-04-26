@@ -1,28 +1,25 @@
 <%= form_for(@user) do |f| %>
-<div class="form_wrapper">
 
 
-<div class="form_input_wrapper">
 <%= f.label :name %>
 <br>
 <%= f.text_field :name %>
-</div>
 
-<div class="form_input_wrapper">
+
 <%= f.label :email %>
 <br>
 <%= f.email_field :email %>
-</div>
 
-<div class="form_input_wrapper">
+
+
 <%= f.label :password %>
 <br>
 <%= f.password_field :password %>
-</div>
 
 
-<%= f.submit "Sign Up" %>
+
+<%= f.submit "Sign Up", class: "button" %>
 
 
-</div>
+
 <% end %>

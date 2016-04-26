@@ -4,6 +4,7 @@
 
 <div class="form_input_wrapper"> 
 <%= f.label :title %>
+<br>
 <%= f.text_field :title %>
 </div>
 
@@ -16,7 +17,11 @@
 </div>
 
 </div>
+<%= f.submit "Create Question", class: "button" %>
 
-<%= f.submit %>
+<br>
+
+<br>
+<div class="simple_button"><%= link_to "Back", :back %><div>
 
 <% end %>
