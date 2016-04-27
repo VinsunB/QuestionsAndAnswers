@@ -4,7 +4,10 @@ Rails.application.routes.draw do
 
 root 'questions#index'
 
-resources :questions
+resources :questions do
+  resources :comments
+end
+
   resources :users
   resources :sessions
   # The priority is based upon order of creation: first created -> highest priority.

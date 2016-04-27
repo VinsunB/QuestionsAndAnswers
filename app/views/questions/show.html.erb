@@ -13,3 +13,34 @@
 <% end %>
 <% end %>
 </div>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<% @question.comments.each do |comment| %>
+	<br>
+	<div class="comment">
+	<%= comment.body%>
+	</div>
+	<% end %>
+	<% if current_user %>
+	<%= render "comments/form"%>
+<% end %>
+
+
+
+
+
