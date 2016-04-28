@@ -4,7 +4,6 @@
 <p>
 <%= @question.body %>
 </p>
-<div>
 <div class="simple_button"><%= link_to "Back", questions_path %></div>
 
 <% if current_user %>
@@ -32,11 +31,15 @@
 
 <% @question.comments.each do |comment| %>
 	<br>
-	<div class="comment">
+	<div class="comment_box">
 	<%= comment.body%>
+	<h6>by <%= comment.user.name %></h6>
 	</div>
 	<% end %>
 	<% if current_user %>
+	<br>
+<br>
+<br>
 	<%= render "comments/form"%>
 <% end %>
 
